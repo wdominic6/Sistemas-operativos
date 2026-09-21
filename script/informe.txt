@@ -1,0 +1,788 @@
+
+============================================================
+SISTEMA OPERATIVO
+============================================================
+Alpine Linux             : 3.24.2
+Kernel                   : 6.18.52-0-lts
+Arquitectura             : x86_64
+Hostname                 : localhost
+Kernel completo          : Linux localhost 6.18.52-0-lts #1-Alpine SMP PREEMPT_DYNAMIC 2026-09-15 05:37:48 x86_64 Linux
+Distribución            : Alpine Linux v3.24
+ID                       : alpine
+Versión                 : 3.24.2
+
+============================================================
+PROCESADOR (CPU)
+============================================================
+Modelo                   : AMD Ryzen 7 5800H with Radeon Graphics
+CPU lógicas             : 1
+
+--- Información detallada ---
+  Architecture:                            x86_64
+  CPU(s):                                  1
+  On-line CPU(s) list:                     0
+  Vendor ID:                               AuthenticAMD
+  Model name:                              AMD Ryzen 7 5800H with Radeon Graphics
+  Thread(s) per core:                      1
+  Core(s) per socket:                      1
+  Socket(s):                               1
+  Hypervisor vendor:                       KVM
+  Virtualization type:                     full
+  NUMA node0 CPU(s):                       0
+
+--- CPUs detectadas en /proc/cpuinfo ---
+  CPUs lógicas: 1
+
+============================================================
+MEMORIA RAM
+============================================================
+RAM total                : 0.94 GB
+RAM usada aprox.         : 0.62 GB
+RAM disponible           : 0.32 GB
+
+--- Estado de memoria ---
+               total        used        free      shared  buff/cache   available
+Mem:           965Mi       636Mi        78Mi       9.6Mi       391Mi       329Mi
+Swap:          1.9Gi       404Mi       1.5Gi
+
+============================================================
+MEMORIA SWAP
+============================================================
+               total        used        free      shared  buff/cache   available
+Swap:          1.9Gi       404Mi       1.5Gi
+
+============================================================
+ALMACENAMIENTO
+============================================================
+--- Discos y particiones ---
+NAME    SIZE TYPE FSTYPE MOUNTPOINTS MODEL
+sda       8G disk                    VBOX HARDDISK   
+├─sda1  300M part        /boot       
+├─sda2  1.9G part        [SWAP]      
+└─sda3  5.8G part        /           
+sr0    50.9M rom                     CD-ROM          
+
+--- Espacio de archivos ---
+Filesystem                Size      Used Available Use% Mounted on
+devtmpfs                 10.0M         0     10.0M   0% /dev
+shm                     482.8M         0    482.8M   0% /dev/shm
+/dev/sda3                 5.6G      1.2G      4.1G  23% /
+tmpfs                   193.1M    428.0K    192.7M   0% /run
+/dev/sda1               271.1M     39.0M    213.1M  15% /boot
+tmpfs                   482.8M      3.8M    479.0M   1% /tmp
+
+============================================================
+DISPOSITIVOS PCI
+============================================================
+00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+00:01.1 IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)
+00:02.0 VGA compatible controller: VMware SVGA II Adapter
+00:03.0 Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+00:04.0 System peripheral: InnoTek Systemberatung GmbH VirtualBox Guest Service
+00:05.0 Multimedia audio controller: Intel Corporation 82801AA AC'97 Audio Controller (rev 01)
+00:06.0 USB controller: Apple Inc. KeyLargo/Intrepid USB
+00:07.0 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 08)
+00:0b.0 USB controller: Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB2 EHCI Controller
+00:0d.0 SATA controller: Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)
+
+============================================================
+DISPOSITIVOS USB
+============================================================
+Bus 001 Device 001: ID 1d6b:0002 Linux 6.18.52-0-lts ehci_hcd EHCI Host Controller
+Bus 002 Device 001: ID 1d6b:0001 Linux 6.18.52-0-lts ohci_hcd OHCI PCI host controller
+Bus 002 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+
+============================================================
+RED
+============================================================
+--- Interfaces ---
+
+--- Enlaces ---
+
+--- Rutas ---
+default via 10.0.2.2 dev eth0  metric 202 
+10.0.2.0/24 dev eth0 scope link  src 10.0.2.15 
+
+--- Información de eth0 ---
+      link/ether 08:00:27:24:bf:f7 brd ff:ff:ff:ff:ff:ff
+      inet 10.0.2.15/24 scope global eth0
+
+============================================================
+CONFIGURACIÓN DNS
+============================================================
+nameserver 200.48.225.130
+nameserver 200.48.225.146
+
+============================================================
+SOFTWARE
+============================================================
+Gestor de paquetes       : apk
+
+--- Paquetes instalados ---
+accountsservice
+acl-libs
+adwaita-fonts
+adwaita-fonts-mono
+adwaita-fonts-sans
+adwaita-icon-theme
+agetty
+agetty-openrc
+alpine-base
+alpine-baselayout
+alpine-baselayout-data
+alpine-conf
+alpine-keys
+alpine-release
+alsa-lib
+aom-libs
+apk-tools
+at-spi2-core
+at-spi2-core-libs
+avahi-libs
+blkid
+bridge
+brotli-libs
+bubblewrap
+busybox
+busybox-binsh
+busybox-mdev-openrc
+busybox-openrc
+busybox-suid
+c-ares
+ca-certificates
+ca-certificates-bundle
+cairo
+cairo-gobject
+cdparanoia-libs
+cfdisk
+cjson
+cryptsetup-libs
+cups-libs
+dbus
+dbus-daemon-launch-helper
+dbus-libs
+dbus-openrc
+dbus-x11
+desktop-file-utils
+device-mapper
+device-mapper-libs
+device-mapper-udev
+directfb
+dmesg
+doas
+duktape-libs
+e2fsprogs
+e2fsprogs-libs
+enchant2-libs
+encodings
+eudev
+eudev-libs
+eudev-openrc
+exo
+exo-libs
+faac
+faad2-libs
+fdk-aac
+ffmpeg-libavcodec
+ffmpeg-libavfilter
+ffmpeg-libavformat
+ffmpeg-libavutil
+ffmpeg-libswresample
+ffmpeg-libswscale
+ffmpegthumbnailer
+findmnt
+firefox
+flite
+flock
+font-alias
+font-cursor-misc
+font-dejavu
+font-misc-misc
+fontconfig
+freetype
+fribidi
+fstrim
+garcon
+gcr
+gcr-base
+gdk-pixbuf
+glib
+glib-networking
+glslang-libs
+glycin-image-rs
+glycin-svg
+gmp
+gnome-keyring
+gnome-keyring-openrc
+gnome-keyring-pam
+gnutls
+gobject-introspection
+graphene
+graphite2
+gsettings-desktop-schemas
+gsm
+gspell
+gst-plugins-bad
+gst-plugins-base
+gstreamer
+gstreamer-ptp-helper
+gtk+3.0
+gtk-layer-shell
+gtk-update-icon-cache
+gtksourceview4
+harfbuzz
+harfbuzz-icu
+hexdump
+hicolor-icon-theme
+hidapi
+hwdata-pci
+hwdata-usb
+hyphen
+iceauth
+icu-data-en
+icu-libs
+ifupdown-ng
+imath
+iso-codes
+json-c
+json-glib
+kmod
+kmod-libs
+lame-libs
+lcms2
+lddtree
+libapk
+libarchive
+libass
+libatk-1.0
+libatk-bridge-2.0
+libatomic
+libavif
+libblkid
+libbluray
+libbsd
+libbz2
+libcap-ng
+libcap2
+libcolord
+libcom_err
+libcrypto3
+libcurl
+libdav1d
+libdbusmenu-glib
+libdbusmenu-gtk3
+libdc1394
+libde265
+libdeflate
+libdisplay-info
+libdovi
+libdrm
+libdvdcss
+libdvdnav
+libdvdread
+libeconf
+libedit
+libelf
+libepoxy
+libevdev
+libevent
+libexif
+libexpat
+libfdisk
+libffi
+libflac
+libfontenc
+libfreeaptx
+libgcc
+libgcrypt
+libgepub
+libglycin
+libgomp
+libgpg-error
+libgsf
+libgtop
+libgudev
+libhwy
+libice
+libidn2
+libinput-libs
+libinput-udev
+libintl
+libjpeg-turbo
+libjxl
+libldac
+libmanette
+libmd
+libmodplug
+libmount
+libncursesw
+libnotify
+libogg
+libopenmpt
+libopenraw
+libpciaccess
+libplacebo
+libpng
+libproc2
+libproxy
+libpsl
+libraw1394
+librist
+librsvg
+librtmp
+libseccomp
+libsecret
+libsharpyuv
+libsm
+libsmartcols
+libsndfile
+libsodium
+libsoup3
+libsrt
+libsrtp
+libssh
+libssl3
+libstdc++
+libSvtAv1Enc
+libtasn1
+libtheora
+libudfread
+libunibreak
+libunistring
+libusb
+libutempter
+libuuid
+libva
+libvdpau
+libvorbis
+libvpl
+libvpx
+libwebp
+libwebpdemux
+libwebpmux
+libwnck3
+libwoff2common
+libwoff2enc
+libx11
+libxau
+libxcb
+libxcomposite
+libxcursor
+libxcvt
+libxdamage
+libxdmcp
+libxext
+libxfce4panel
+libxfce4ui
+libxfce4util
+libxfce4windowing
+libxfixes
+libxfont2
+libxft
+libxi
+libxinerama
+libxkbcommon
+libxkbcommon-x11
+libxkbfile
+libxklavier
+libxml2
+libxmu
+libxpresent
+libxrandr
+libxrender
+libxres
+libxshmfence
+libxslt
+libxt
+libxtst
+libxv
+libxxf86vm
+libyuv
+libzbar
+libzmq
+lightdm
+lightdm-gtk-greeter
+lightdm-openrc
+lilv-libs
+linux-firmware-none
+linux-lts
+linux-pam
+llvm22-libs
+logger
+losetup
+lsblk
+lscpu
+lz4-libs
+mbedtls3
+mcookie
+mdev-conf
+mesa
+mesa-dri-gallium
+mesa-egl
+mesa-gbm
+mesa-gl
+mesa-gles
+mkfontscale
+mkinitfs
+mount
+mousepad
+mpg123-libs
+mtdev
+mtools
+musl
+musl-utils
+nano
+ncurses-terminfo-base
+neon
+nettle
+nghttp2-libs
+nspr
+nss
+numactl
+openal-soft-libs
+openexr-libiex
+openexr-libilmthread
+openexr-libopenexr
+openexr-libopenexrcore
+openh264
+openjpeg
+openrc
+openrc-user
+openssh
+openssh-client-common
+openssh-client-default
+openssh-keygen
+openssh-server
+openssh-server-common
+openssh-server-common-openrc
+openssh-sftp-server
+openssl
+opus
+orc
+p11-kit
+pango
+partx
+pciutils
+pciutils-libs
+pcre2
+pixman
+pkgconf
+polkit
+polkit-common
+polkit-noelogind-libs
+polkit-openrc
+poppler
+poppler-glib
+procps-ng
+rav1e-libs
+runuser
+sbc
+scanelf
+scudo-malloc
+serd-libs
+setarch
+setpriv
+sfdisk
+shaderc
+shared-mime-info
+simdutf
+skalibs-libs
+sord-libs
+soundtouch
+soxr
+spandsp
+spirv-tools
+sqlite-libs
+sratom
+ssl_client
+startup-notification
+sudo
+syslinux
+thunar
+thunar-volman
+tiff
+tslib
+tumbler
+udev-init-scripts
+udev-init-scripts-openrc
+umount
+upower
+upower-udev
+usbutils
+util-linux
+util-linux-misc
+util-linux-openrc
+util-macros
+utmps-libs
+uuidgen
+vidstab
+vo-aacenc
+vo-amrwbenc
+vte3
+vte3-profile
+vulkan-loader
+wayland-libs-client
+wayland-libs-cursor
+wayland-libs-egl
+wayland-libs-server
+webkit2gtk-4.1
+wipefs
+x264-libs
+x265-libs
+xauth
+xcb-util
+xdg-dbus-proxy
+xf86-input-libinput
+xfce4
+xfce4-appfinder
+xfce4-panel
+xfce4-power-manager
+xfce4-session
+xfce4-settings
+xfce4-terminal
+xfconf
+xfdesktop
+xfwm4
+xinit
+xkbcomp
+xkeyboard-config
+xmodmap
+xorg-server
+xorg-server-common
+xrdb
+xvidcore
+xz-libs
+yaml
+zimg
+zix-libs
+zlib
+zstd-libs
+
+--- Cantidad de paquetes ---
+Paquetes                 : 438
+
+============================================================
+SERVICIOS
+============================================================
+Runlevel: default
+ dbus                                                              [  started  ]
+ lightdm                                               [  started 00:55:12 (0) ]
+ ntpd                                                              [  started  ]
+ udev-postmount                                                    [  started  ]
+ crond                                                             [  started  ]
+ sshd                                                              [  started  ]
+ acpid                                                             [  started  ]
+Dynamic Runlevel: hotplugged
+Dynamic Runlevel: needed/wanted
+ sysfs                                                             [  started  ]
+ fsck                                                              [  started  ]
+ root                                                              [  started  ]
+ localmount                                                        [  started  ]
+Dynamic Runlevel: manual
+
+============================================================
+PROCESOS
+============================================================
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   1636   512 ?        Ss   16:46   0:00 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    16:46   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    16:46   0:00 [pool_workqueue_release]
+root         4  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-rcu_gp]
+root         5  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-sync_wq]
+root         6  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-kvfree_rcu_reclaim]
+root         7  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-slub_flushwq]
+root         8  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-netns]
+root        11  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/0:0H-events_highpri]
+root        13  0.0  0.0      0     0 ?        I    16:46   0:00 [kworker/u4:1-events_unbound]
+root        14  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-mm_percpu_wq]
+root        15  0.0  0.0      0     0 ?        S    16:46   0:00 [ksoftirqd/0]
+root        16  0.0  0.0      0     0 ?        I    16:46   0:00 [rcu_preempt]
+root        17  0.0  0.0      0     0 ?        S    16:46   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root        18  0.0  0.0      0     0 ?        S    16:46   0:00 [rcu_exp_gp_kthread_worker]
+root        19  0.0  0.0      0     0 ?        S    16:46   0:00 [migration/0]
+root        20  0.0  0.0      0     0 ?        S    16:46   0:00 [idle_inject/0]
+root        21  0.0  0.0      0     0 ?        S    16:46   0:00 [cpuhp/0]
+root        22  0.0  0.0      0     0 ?        S    16:46   0:00 [kdevtmpfs]
+root        23  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-inet_frag_wq]
+root        24  0.0  0.0      0     0 ?        I    16:46   0:00 [rcu_tasks_kthread]
+root        25  0.0  0.0      0     0 ?        I    16:46   0:00 [rcu_tasks_rude_kthread]
+root        26  0.0  0.0      0     0 ?        I    16:46   0:00 [rcu_tasks_trace_kthread]
+root        27  0.0  0.0      0     0 ?        S    16:46   0:00 [kauditd]
+root        28  0.0  0.0      0     0 ?        S    16:46   0:00 [oom_reaper]
+root        29  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-writeback]
+root        30  0.0  0.0      0     0 ?        S    16:46   0:00 [kcompactd0]
+root        31  0.0  0.0      0     0 ?        SN   16:46   0:00 [ksmd]
+root        32  0.0  0.0      0     0 ?        SN   16:46   0:00 [khugepaged]
+root        33  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-kblockd]
+root        34  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-blkcg_punt_bio]
+root        35  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-kintegrityd]
+root        36  0.0  0.0      0     0 ?        S    16:46   0:00 [irq/9-acpi]
+root        37  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-md_bitmap]
+root        38  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-edac-poller]
+root        39  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-devfreq_wq]
+root        40  0.0  0.0      0     0 ?        S    16:46   0:00 [watchdogd]
+root        41  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-quota_events_unbound]
+root        42  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/0:1H-kblockd]
+root        43  0.0  0.0      0     0 ?        I    16:46   0:00 [kworker/u4:2-events_unbound]
+root        45  0.6  0.0      0     0 ?        S    16:46   0:21 [kswapd0]
+root        62  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-kthrotld]
+root       198  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-mld]
+root       199  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-ipv6_addrconf]
+root       200  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-kstrp]
+root       325  0.0  0.0      0     0 ?        I    16:46   0:00 [kworker/u4:3-events_unbound]
+root       463  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/u5:0]
+root       813  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-ata_sff]
+root       822  0.0  0.0      0     0 ?        S    16:46   0:00 [scsi_eh_0]
+root       823  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-scsi_tmf_0]
+root       851  0.0  0.0      0     0 ?        S    16:46   0:00 [scsi_eh_1]
+root       852  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-scsi_tmf_1]
+root       856  0.0  0.0      0     0 ?        S    16:46   0:00 [scsi_eh_2]
+root       857  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-scsi_tmf_2]
+root      1303  0.0  0.0      0     0 ?        S    16:46   0:00 [jbd2/sda3-8]
+root      1304  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-ext4-rsv-conversion]
+root      1574  0.0  0.0  10228   388 ?        Ss   16:46   0:00 /sbin/udevd
+root      1631  0.0  0.0      0     0 ?        S    16:46   0:00 [irq/18-vmwgfx]
+root      1632  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-ttm]
+root      1794  0.0  0.0      0     0 ?        S    16:46   0:00 [jbd2/sda1-8]
+root      1795  0.0  0.0      0     0 ?        I<   16:46   0:00 [kworker/R-ext4-rsv-conversion]
+root      1988  0.0  0.0   1636   260 ?        Ss   16:46   0:00 /sbin/udhcpc -b -R -p /var/run/udhcpc.eth0.pid -i eth0 -x hostname:localhost
+root      2061  0.0  0.0   1656   432 ?        Ss   16:46   0:00 /sbin/syslogd -t -n
+root      2082  0.0  0.0   1636   368 ?        Ss   16:46   0:00 /sbin/acpid -f
+root      2102  0.0  0.0   1640   548 ?        Ss   16:46   0:00 /usr/sbin/crond -c /etc/crontabs -f
+message+  2124  0.0  0.0   1724   788 ?        Ss   16:46   0:00 /usr/bin/dbus-daemon --system --nofork --nopidfile --syslog-only
+root      2145  0.0  0.0   1040   300 ?        S    16:46   0:00 supervise-daemon lightdm --start --respawn-delay 2 --respawn-max 5 --respawn-period 1800 /usr/bin/lightdm --
+root      2146  0.0  0.2   9256  2088 ?        Ssl  16:46   0:00 /usr/bin/lightdm
+ntp       2164  0.0  0.0   1640   404 ?        Ss   16:46   0:00 /usr/sbin/ntpd -N -p pool.ntp.org -n
+root      2180  3.6  3.8 339716 38276 tty7     Ssl+ 16:46   2:01 /usr/libexec/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      2185  0.0  0.1   7192  1688 ?        Sl   16:46   0:00 /usr/libexec/accounts-daemon
+polkitd   2197  0.0  0.1   7864  1800 ?        Sl   16:46   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root      2208  0.0  0.0   6648   316 ?        S    16:46   0:00 sshd: /usr/sbin/sshd [listener] 0 of 10-100 startups
+root      2235  0.0  0.0   1636   344 tty1     Ss+  16:46   0:00 /sbin/getty 38400 tty1
+root      2236  0.0  0.0   1636   344 tty2     Ss+  16:46   0:00 /sbin/getty 38400 tty2
+root      2238  0.0  0.0   1636   348 tty3     Ss+  16:46   0:00 /sbin/getty 38400 tty3
+root      2239  0.0  0.0   1636   344 tty4     Ss+  16:46   0:00 /sbin/getty 38400 tty4
+root      2240  0.0  0.0   1636   344 tty5     Ss+  16:46   0:00 /sbin/getty 38400 tty5
+root      2241  0.0  0.0   1636   348 tty6     Ss+  16:46   0:00 /sbin/getty 38400 tty6
+lightdm   2259  0.0  0.0   2812   416 ?        S    16:46   0:00 dbus-launch --autolaunch 4fd525a34fecf2d6d5fce8fb6ab15242 --binary-syntax --close-stderr
+lightdm   2260  0.0  0.0   1552   416 ?        Ss   16:46   0:00 /usr/bin/dbus-daemon --syslog-only --fork --print-pid 5 --print-address 7 --session
+lightdm   2262  0.0  0.1   8572  1132 ?        Sl   16:46   0:00 /usr/libexec/at-spi-bus-launcher
+lightdm   2267  0.0  0.0   1520   620 ?        S    16:46   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/var/lib/lightdm/.cache/at-spi/bus_0
+root      2317  0.0  0.1   9540  1016 ?        Sl   16:46   0:00 lightdm --session-child 13 20
+lightdm   2319  0.0  0.1   9164  1444 ?        Sl   16:46   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+dom       2341  0.0  0.8  46228  8268 ?        Ssl  16:46   0:01 xfce4-session
+dom       2349  0.0  0.0   2812   420 ?        S    16:46   0:00 dbus-launch --autolaunch 4fd525a34fecf2d6d5fce8fb6ab15242 --binary-syntax --close-stderr
+dom       2350  0.0  0.0   1508   420 ?        Ss   16:46   0:00 /usr/bin/dbus-daemon --syslog-only --fork --print-pid 5 --print-address 7 --session
+dom       2354  0.0  0.0   2812   420 ?        S    16:46   0:00 /usr/bin/dbus-launch --sh-syntax --exit-with-session xfce4-session
+dom       2355  0.0  0.0   1808   960 ?        Ss   16:46   0:00 /usr/bin/dbus-daemon --syslog --fork --print-pid 5 --print-address 7 --session
+dom       2369  0.0  0.0   6424   252 ?        Ss   16:46   0:00 /usr/bin/ssh-agent -s
+dom       2371  0.2  1.0 293156 10852 ?        Sl   16:46   0:08 xfwm4
+dom       2392  0.0  0.5  40632  5440 ?        Sl   16:46   0:00 xfsettingsd
+root      2398  0.0  0.2   7712  2012 ?        Sl   16:46   0:00 /usr/libexec/upowerd
+dom       2405  0.2  1.6  58060 16260 ?        Sl   16:46   0:07 xfce4-panel
+dom       2411  0.4  2.2  60176 22196 ?        Sl   16:46   0:13 Thunar --daemon
+dom       2419  0.0  1.3  84792 13024 ?        Sl   16:46   0:02 xfdesktop
+dom       2472  0.0  0.3  38724  3748 ?        Sl   16:46   0:00 xfce4-power-manager
+dom       2477  0.0  0.5  39824  5468 ?        Sl   16:46   0:00 /usr/lib/xfce4/panel/wrapper-2.0 /usr/lib/xfce4/panel/plugins/libsystray.so 6 29360140 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items
+dom       2508  0.0  0.7  46784  7464 ?        Sl   16:46   0:00 /usr/lib/xfce4/panel/wrapper-2.0 /usr/lib/xfce4/panel/plugins/libactions.so 10 29360141 actions Action Buttons Log out, lock or other system actions
+dom       4299  0.0  0.2   8624  2144 ?        Sl   16:53   0:00 /usr/libexec/at-spi-bus-launcher
+root      6153  0.0  0.0      0     0 ?        I    17:02   0:00 [kworker/0:0-events_freezable_pwr_efficient]
+root      7417  0.0  0.0      0     0 ?        I    17:24   0:00 [kworker/0:2-ata_sff]
+dom       8117  5.2 24.6 11904960 243452 ?     Sl   17:28   0:40 /usr/lib/firefox/firefox
+dom       8159  0.0  1.6 566656 16212 ?        S    17:28   0:00 /usr/lib/firefox/firefox -contentproc -ipcHandle 0 -signalPipe 1 -initialChannelId {75cffdf5-f243-47b8-b82e-3e277e0bde5e} -parentPid 8117 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 1 forkserver
+dom       8177  0.0  2.2 581016 22664 ?        Sl   17:28   0:00 /usr/lib/firefox/firefox -contentproc -parentBuildID 20260602093637 -prefsHandle 0:34039 -prefMapHandle 1:284996 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {60a87b91-8dc6-47e7-8c25-f251d83c9f38} -parentPid 8117 -appDir /usr/lib/firefox/browser 2 socket
+dom       8201  0.2 10.7 2754708 106508 ?      Sl   17:28   0:01 /usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:34180 -prefMapHandle 1:284996 -jsInitHandle 2:156120 -parentBuildID 20260602093637 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {8ec20c86-f8f9-4e2a-9b75-59bf54567894} -parentPid 8117 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 3 tab
+dom       8210  0.0  2.1 671360 21276 ?        Sl   17:28   0:00 /usr/lib/firefox/firefox -contentproc -parentBuildID 20260602093637 -prefsHandle 0:34180 -prefMapHandle 1:284996 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {8af729a9-6dc9-4428-966f-7c01968a2dbb} -parentPid 8117 -appDir /usr/lib/firefox/browser 4 rdd
+dom       8322  0.0  5.3 2718336 52524 ?       Sl   17:28   0:00 /usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:34322 -prefMapHandle 1:284996 -jsInitHandle 2:156120 -parentBuildID 20260602093637 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {6376cd64-f1d3-4f0e-9ccd-faa5aa7f100e} -parentPid 8117 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 5 tab
+dom       8387  0.0  2.0 580160 20496 ?        Sl   17:28   0:00 /usr/lib/firefox/firefox -contentproc -parentBuildID 20260602093637 -sandboxingKind 0 -prefsHandle 0:45861 -prefMapHandle 1:284996 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {ffd9b19e-45ac-481d-9aa3-3aa1e0560ce0} -parentPid 8117 -appDir /usr/lib/firefox/browser 6 utility
+dom       8398  2.2 13.0 2858356 129280 ?      Sl   17:28   0:17 /usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:42589 -prefMapHandle 1:284996 -jsInitHandle 2:156120 -parentBuildID 20260602093637 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {7e264ae6-01ce-43b0-bfec-417c9e947bad} -parentPid 8117 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 8 tab
+dom       8475  0.0  3.8 2693812 38024 ?       Sl   17:28   0:00 /usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:42629 -prefMapHandle 1:284996 -jsInitHandle 2:156120 -parentBuildID 20260602093637 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {3a0332c4-dddc-4e3a-a77d-94749eb1bdf6} -parentPid 8117 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 10 tab
+dom       8531  0.0  3.8 2693812 38104 ?       Sl   17:28   0:00 /usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:42629 -prefMapHandle 1:284996 -jsInitHandle 2:156120 -parentBuildID 20260602093637 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {806cf825-db64-45dd-84b5-16b0a31fc827} -parentPid 8117 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 11 tab
+dom       8555  0.0  3.8 2693812 38044 ?       Sl   17:28   0:00 /usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:42629 -prefMapHandle 1:284996 -jsInitHandle 2:156120 -parentBuildID 20260602093637 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {a3b7850c-facc-4fb4-9b0d-237f1e7185bb} -parentPid 8117 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 12 tab
+dom       8668  0.1  3.8 721300 37804 ?        SNl  17:35   0:00 /usr/lib/tumbler-1/tumblerd
+dom       8788  0.0  0.4   6996  4200 ?        Sl   17:35   0:00 /usr/lib/xfce4/xfconf/xfconfd
+root      9874  0.0  0.0      0     0 ?        I    17:39   0:00 [kworker/u4:0-events_unbound]
+root      9879  0.0  0.0      0     0 ?        I    17:39   0:00 [kworker/0:1]
+dom       9887  0.0  0.0    952   712 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 32 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 31
+dom       9892  0.0  0.0    968   612 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 32 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 31
+dom       9893  0.0  0.0    952   720 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 19 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 15
+dom       9895  0.0  0.0    952   692 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 18 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 17
+dom       9897  0.0  0.0    968   620 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 19 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 15
+dom       9899  0.0  0.4   9380  4372 ?        Sl   17:41   0:00 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 31
+dom       9901  0.0  0.0    968   588 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 18 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 17
+dom       9903  0.0  0.4   9376  4580 ?        Sl   17:41   0:00 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 15
+dom       9906  0.0  0.4   9380  4540 ?        Sl   17:41   0:00 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 17
+dom       9916  0.0  0.0    952   680 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --ro-bind-try /etc/fonts/conf.d /etc/fonts/conf.d --ro-bind-try /etc/fonts/fonts.conf /etc/fonts/fonts.conf --ro-bind-try /home/dom/.cache/fontconfig /home/dom/.cache/fontconfig --ro-bind-try /var/cache/fontconfig /var/cache/fontconfig --bind-try /home/dom/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg /home/dom/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --setenv XDG_CACHE_HOME /home/dom/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --seccomp 20 /usr/libexec/glycin-loaders/2+/glycin-svg --dbus-fd 19
+dom       9917  0.0  0.0    968   576 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --ro-bind-try /etc/fonts/conf.d /etc/fonts/conf.d --ro-bind-try /etc/fonts/fonts.conf /etc/fonts/fonts.conf --ro-bind-try /home/dom/.cache/fontconfig /home/dom/.cache/fontconfig --ro-bind-try /var/cache/fontconfig /var/cache/fontconfig --bind-try /home/dom/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg /home/dom/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --setenv XDG_CACHE_HOME /home/dom/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --seccomp 20 /usr/libexec/glycin-loaders/2+/glycin-svg --dbus-fd 19
+dom       9918  0.2  1.3  29044 13448 ?        Sl   17:41   0:00 /usr/libexec/glycin-loaders/2+/glycin-svg --dbus-fd 19
+dom      10034  1.3  3.9  69532 38844 ?        Sl   17:41   0:00 /usr/bin/xfce4-terminal
+dom      10049  0.0  0.0    952   688 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 16 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 15
+dom      10050  0.0  0.0    968   588 ?        S    17:41   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --ro-bind /lib /lib --seccomp 16 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 15
+dom      10051  0.0  0.6   9376  6684 ?        Sl   17:41   0:00 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 15
+dom      10055  0.0  0.1   1720  1232 pts/0    Ss   17:41   0:00 sh
+dom      10149  0.0  0.1   1656  1184 pts/0    S+   17:41   0:00 /bin/sh ./info.sh
+dom      10188  0.0  0.2   3072  2128 pts/0    R+   17:41   0:00 ps aux
+
+============================================================
+TIEMPO DE ACTIVIDAD
+============================================================
+Uptime                   : 0d 0h 55m 9s
+
+============================================================
+VIRTUALIZACIÓN
+============================================================
+Virtualización          : Posible máquina virtual
+
+============================================================
+VIRTUALBOX
+============================================================
+VirtualBox detectado mediante USB:
+Bus 002 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+
+============================================================
+GPU / GRÁFICOS
+============================================================
+00:02.0 VGA compatible controller: VMware SVGA II Adapter
+
+============================================================
+BATERÍA
+============================================================
+BAT0 estado              : Not charging
+BAT0 carga               : 80%
+
+============================================================
+TEMPERATURA
+============================================================
+No se encontraron sensores térmicos.
+
+============================================================
+VARIABLES DE ENTORNO RELEVANTES
+============================================================
+SHELL     : /bin/sh
+USER      : dom
+HOME      : /home/dom
+PATH      : /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+DISPLAY   : :0.0
+XDG_SESSION_TYPE : x11
+DESKTOP_SESSION  : xfce
+
+============================================================
+FECHA Y HORA
+============================================================
+Mon Sep 21 17:41:35 -05 2026
+
+============================================================
+RESUMEN
+============================================================
+Sistema                  : Alpine Linux 3.24.2
+Kernel                   : 6.18.52-0-lts
+Arquitectura             : x86_64
+CPU lógicas             : 1
+RAM                      : 0.94 GB
+Uptime                   : 0d 0h 55m
+
+============================================================
+FIN DEL INFORME
+============================================================
+Informe generado: Mon Sep 21 17:41:35 -05 2026
+Alpine Linux Hardware/Software Collector v2.0
